@@ -1,4 +1,6 @@
-﻿// Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа. Решение 2
+﻿// --------Домашнее задание к семинару 2---------
+
+// Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа. Решение 2
 /*
 564 -> 5
 782 -> 8
@@ -78,4 +80,32 @@ Console.Write("Input a number day of week: ");
 int num = Convert.ToInt32(Console.ReadLine());
 bool result = NumberDayOfWeek(num);
 Console.WriteLine(result);
+*/
+
+// Задача 13: Напишите программу, которая выводит третью цифру заданного числа. Решение 2.
+/*
+645 -> 5
+32679 -> 6
+21 -> -1
+*/
+/*
+int ThirdSymbol(int num)
+{
+    int max = 1000;
+    int min0 = -1000;
+    int min = 100;
+    int max0 = -100;
+    int result = 0;
+
+    while(num > max || num < min0) num = num / 10;
+    if(num > min || num < max0) result = num % 10;
+    else result = -1;
+return result;
+}
+
+Console.Write("Input integer number:  ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+int thirdSymbol = ThirdSymbol(num);
+Console.WriteLine($"The third symbol of number {num} is {thirdSymbol}");
 */
