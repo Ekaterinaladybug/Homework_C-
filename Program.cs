@@ -182,7 +182,7 @@ Console.Write("Input a number:  ");
 Cubes(Convert.ToInt32(Console.ReadLine()));
 */
 // Задача 23. Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N. While.
-
+/*
 void Cubes(int num)
 {
     int i = 1;
@@ -196,5 +196,5 @@ void Cubes(int num)
 }
 Console.Write("Input a integer number:  ");
 Cubes(Convert.ToInt32(Console.ReadLine()));
-
+*/
 
