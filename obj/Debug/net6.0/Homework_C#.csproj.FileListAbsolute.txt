@@ -1,0 +1,15 @@
+C:\Users\bukin\Desktop\Обучение Гикбреинс\C#Education\Homework_C#\bin\Debug\net6.0\Homework_C#.exe
+C:\Users\bukin\Desktop\Обучение Гикбреинс\C#Education\Homework_C#\bin\Debug\net6.0\Homework_C#.deps.json
+C:\Users\bukin\Desktop\Обучение Гикбреинс\C#Education\Homework_C#\bin\Debug\net6.0\Homework_C#.runtimeconfig.json
+C:\Users\bukin\Desktop\Обучение Гикбреинс\C#Education\Homework_C#\bin\Debug\net6.0\Homework_C#.dll
+C:\Users\bukin\Desktop\Обучение Гикбреинс\C#Education\Homework_C#\bin\Debug\net6.0\Homework_C#.pdb
+C:\Users\bukin\Desktop\Обучение Гикбреинс\C#Education\Homework_C#\obj\Debug\net6.0\Homework_C#.csproj.AssemblyReference.cache
+C:\Users\bukin\Desktop\Обучение Гикбреинс\C#Education\Homework_C#\obj\Debug\net6.0\Homework_C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bukin\Desktop\Обучение Гикбреинс\C#Education\Homework_C#\obj\Debug\net6.0\Homework_C#.AssemblyInfoInputs.cache
+C:\Users\bukin\Desktop\Обучение Гикбреинс\C#Education\Homework_C#\obj\Debug\net6.0\Homework_C#.AssemblyInfo.cs
+C:\Users\bukin\Desktop\Обучение Гикбреинс\C#Education\Homework_C#\obj\Debug\net6.0\Homework_C#.csproj.CoreCompileInputs.cache
+C:\Users\bukin\Desktop\Обучение Гикбреинс\C#Education\Homework_C#\obj\Debug\net6.0\Homework_C#.dll
+C:\Users\bukin\Desktop\Обучение Гикбреинс\C#Education\Homework_C#\obj\Debug\net6.0\refint\Homework_C#.dll
+C:\Users\bukin\Desktop\Обучение Гикбреинс\C#Education\Homework_C#\obj\Debug\net6.0\Homework_C#.pdb
+C:\Users\bukin\Desktop\Обучение Гикбреинс\C#Education\Homework_C#\obj\Debug\net6.0\Homework_C#.genruntimeconfig.cache
+C:\Users\bukin\Desktop\Обучение Гикбреинс\C#Education\Homework_C#\obj\Debug\net6.0\ref\Homework_C#.dll

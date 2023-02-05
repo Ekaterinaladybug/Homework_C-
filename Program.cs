@@ -109,3 +109,24 @@ int num = Convert.ToInt32(Console.ReadLine());
 int thirdSymbol = ThirdSymbol(num);
 Console.WriteLine($"The third symbol of number {num} is {thirdSymbol}");
 */
+
+// ------------ Домашнее задание к семинару 3 --------------
+//
+// Задача 19. Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+/*
+14212 -> нет
+12821 -> да
+23432 -> да
+*/
+
+bool PalindromeNumber(int num)
+{
+    if(num % 10 == num / 10000 || num % 100 / 10 == num / 100 % 10)
+        return true;
+    else
+        return false;
+}
+Console.Write("Input a five-digit integer:  ");
+int num = Convert.ToInt32(Console.ReadLine());
+bool result = PalindromeNumber(num);
+Console.WriteLine(result);
