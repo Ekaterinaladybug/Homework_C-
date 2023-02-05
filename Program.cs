@@ -118,7 +118,7 @@ Console.WriteLine($"The third symbol of number {num} is {thirdSymbol}");
 12821 -> да
 23432 -> да
 */
-
+/*
 bool PalindromeNumber(int num)
 {
     if(num % 10 == num / 10000 || num % 100 / 10 == num / 100 % 10)
@@ -130,3 +130,36 @@ Console.Write("Input a five-digit integer:  ");
 int num = Convert.ToInt32(Console.ReadLine());
 bool result = PalindromeNumber(num);
 Console.WriteLine(result);
+*/
+
+// Задача 21. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+/*
+A (3,6,8); B (2,1,-7), -> 15.84
+A (7,-5, 0); B (1,-1,9) -> 11.53
+*/
+
+double LineLength (double x1, double x2, double y1, double y2, double z1, double z2)
+{
+    double LineLength1, LineLength2, LineLength3, result;
+    LineLength1 = x2 - x1;
+    LineLength2 = y2 - y1;
+    LineLength3 = z2 - z1;
+    result = Math.Sqrt(Math.Pow(LineLength1,2) + Math.Pow(LineLength2,2) + Math.Pow(LineLength3,2));
+    return result;
+}
+
+Console.Write("Введите координату X первой точки: ");
+double x1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите координату Y первой точки: ");
+double y1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите координату Z первой точки: ");
+double z1 = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Введите координату X второй точки: ");
+double x2 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите координату Y второй точки: ");
+double y2 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите координату Z второй точки: ");
+double z2 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Длина отрезка: " + Math.Round(LineLength(x1, y1, z1, x2, y2, z2) , 2));
