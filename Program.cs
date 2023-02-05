@@ -165,12 +165,12 @@ double z2 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Длина отрезка: " + Math.Round(LineLength(x1, y1, z1, x2, y2, z2) , 2));
 */
 
-// Задача 23. Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+// Задача 23. Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N. For.
 /*
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125
 */
-
+/*
 void Cubes(int num)
 {
     for(int i = 1; i <= num; i++)
@@ -180,4 +180,21 @@ void Cubes(int num)
 }
 Console.Write("Input a number:  ");
 Cubes(Convert.ToInt32(Console.ReadLine()));
+*/
+// Задача 23. Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N. While.
+
+void Cubes(int num)
+{
+    int i = 1;
+
+    while(i <= num)
+    {
+        Console.Write(i * i * i + "  ");
+        i = i + 1;
+    }
+
+}
+Console.Write("Input a integer number:  ");
+Cubes(Convert.ToInt32(Console.ReadLine()));
+
 
