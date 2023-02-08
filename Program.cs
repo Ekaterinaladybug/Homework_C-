@@ -198,3 +198,26 @@ Console.Write("Input a integer number:  ");
 Cubes(Convert.ToInt32(Console.ReadLine()));
 */
 
+// ------------ Домашнее задание к семинару 4 --------------
+//
+// Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+/*
+3, 5 -> 243 (3⁵)
+2, 4 -> 16
+*/
+/*
+double Degree(double num1, double num2)
+{
+    double result = Math.Pow(num1, num2);
+    return result;
+}
+
+Console.Write("Введите число:  ");
+double num1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите степень:  ");
+double num2 = Convert.ToDouble(Console.ReadLine());
+
+double degree = Degree(num1, num2);
+
+Console.WriteLine($"Число {num1} в натуральной степени {num2}: {degree}");
+*/
