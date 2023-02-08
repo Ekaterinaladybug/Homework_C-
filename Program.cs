@@ -205,7 +205,7 @@ Cubes(Convert.ToInt32(Console.ReadLine()));
 3, 5 -> 243 (3⁵)
 2, 4 -> 16
 */
-/*
+
 double Degree(double num1, double num2)
 {
     double result = Math.Pow(num1, num2);
@@ -220,4 +220,14 @@ double num2 = Convert.ToDouble(Console.ReadLine());
 double degree = Degree(num1, num2);
 
 Console.WriteLine($"Число {num1} в натуральной степени {num2}: {degree}");
+
+//
+//Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+/*
+452 -> 11
+82 -> 10
+9012 -> 12
 */
+
+
+
