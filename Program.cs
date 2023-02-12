@@ -198,14 +198,14 @@ Console.Write("Input a integer number:  ");
 Cubes(Convert.ToInt32(Console.ReadLine()));
 */
 
-// ------------ Домашнее задание к семинару 4 --------------
+// ------------ ДОМАШНЕЕ ЗАДАНИЕ К СЕМИНАРУ 4 --------------
 //
 // Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
 /*
 3, 5 -> 243 (3⁵)
 2, 4 -> 16
 */
-
+/*
 double Degree(double num1, double num2)
 {
     double result = Math.Pow(num1, num2);
@@ -220,14 +220,234 @@ double num2 = Convert.ToDouble(Console.ReadLine());
 double degree = Degree(num1, num2);
 
 Console.WriteLine($"Число {num1} в натуральной степени {num2}: {degree}");
+*/
 
-//
-//Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 /*
 452 -> 11
 82 -> 10
 9012 -> 12
 */
+/*
+int SumOfNumbers (int num)
+{
+    int sum = 0;
+
+    while (num > 0)
+    {
+        sum = (num % 10) + sum;
+        num = num / 10;
+    }
+    return sum;
+}
+Console.Write("Input a number:  ");
+int num = Convert.ToInt32(Console.ReadLine());
+int sumOfNumbers = SumOfNumbers(num);
+Console.WriteLine($"Sum of numbers in number is {sumOfNumbers}");
+*/
 
 
+// Задача 29: Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
+// Массив вводим сами.
+/*
+1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+6, 1, 33 -> [6, 1, 33]
+*/
+/*
+void NewArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+    {
+    Console.Write("Input element number "+i+" = ");
+    array[i] = Convert.ToInt32(Console.ReadLine());
+    }
+}
 
+void ShowArray(int[] array)
+{
+    for(int i = 0;  i < array.Length; i++)
+    {
+        Console.Write(array[i] + "  ");
+    }
+    Console.WriteLine();
+}
+
+int[] array = new int [5];
+NewArray(array);
+ShowArray(array);
+*/
+
+
+// Задача 29: Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
+// Случайная генерация.
+/*
+1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+6, 1, 33 -> [6, 1, 33]
+*/
+/*
+int[] CreateRandomArray(int size, int minValue, int maxValue)
+{
+    int[] array = new int[size];
+
+    for(int i = 0; i < size; i++)
+        array[i] = new Random().Next(minValue, maxValue + 1);
+
+    return array;
+}
+
+void ShowArray(int [] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + "  ");
+
+    Console.WriteLine();
+}
+
+Console.Write("Input a length of new array:  ");
+int length = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a min possible value:  ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a max possible value:  ");
+int max = Convert.ToInt32(Console.ReadLine());
+
+int[] myArray = CreateRandomArray(length, min, max);
+ShowArray(myArray);
+*/
+
+// ------------ ДОМАШНИЕ ЗАДАНИЕ К СЕМИНАРУ 5 --------------
+
+// Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
+/*
+[345, 897, 568, 234] -> 2
+*/
+/*
+int[] CreateRandomArray(int size)
+{
+    int[] array = new int[size];
+
+    for(int i = 0; i < array.Length; i++)
+        array[i] = new Random().Next(100, 1000);
+
+    return array;
+}
+
+void ShowArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + "  ");
+
+    Console.WriteLine();
+}
+
+int CountOfEven(int [] array)
+{
+    int count = 0;
+
+    for (int i = 0; i < array.Length; i++)
+        if (array[i] % 2 == 0)
+            count++;
+    return count;
+}
+
+Console.Write("Input a length of new array:  ");
+int length = Convert.ToInt32(Console.ReadLine());
+
+int[] myArray = CreateRandomArray(length);
+ShowArray(myArray);
+
+int countOfEven = CountOfEven(myArray);
+Console.WriteLine("Count of even numbers " + countOfEven);
+*/
+
+// Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+/*
+[3, 7, 23, 12] -> 19
+[-4, -6, 89, 6] -> 0
+*/
+/*
+int[] CreateRandomArray(int size, int minValue, int maxValue)
+{
+    int[] array = new int[size];
+
+    for(int i = 0; i < size; i++)
+        array[i] = new Random().Next(minValue, maxValue + 1);
+
+    return array;
+}
+
+void ShowArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + "  ");
+
+    Console.WriteLine();
+}
+
+int SumOfUneven(int [] array)
+{
+    int sum = 0;
+
+    for (int i = 0; i < array.Length; i++)
+        if (i % 2 == 0)
+            sum += array[i];
+    return sum;
+}
+
+Console.Write("Input a length of new array:  ");
+int length = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a min possible value:  ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a max possible value:  ");
+int max = Convert.ToInt32(Console.ReadLine());
+
+int[] myArray = CreateRandomArray(length, min, max);
+ShowArray(myArray);
+
+int sumOfUneven = SumOfUneven(myArray);
+Console.WriteLine("Sum of uneven index is " + sumOfUneven);
+/*
+
+// Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+/*
+[3 7 22 2 78] -> 76
+*/
+// ------------------ НЕ РЕШЕНА --------------------------
+/*
+void NewArray(double[] array)
+{
+    for(double i = 0; i < array.Length; i++)
+    {
+    Console.Write("Input element number "+i+" = ");
+    array[i] = Convert.ToDouble(Console.ReadLine());
+    }
+}
+
+void ShowArray(double[] array)
+{
+    for(double i = 0; i < array.Length; i++)
+        Console.Write(array[i] + "  ");
+
+    Console.WriteLine();
+}
+
+double DiffrenceMaxMin(double[] array, double max, double min);
+{
+    double max = array[0];
+    double min = array[0];
+    double diffrence = 0;
+
+    for(double i = 0; i < array.Length; i++)
+        if(array[i] > max) 
+            max = array[i];
+        if(array[i] < min) 
+            min = array[i];
+    diffrence = max - min;
+    return diffrence;
+}
+
+double[] array = new double[5];
+NewArray(array);
+ShowArray(array);
+double diffrenceMaxMin = DiffrenceMaxMin(myArray);
+Console.Write("Diffrence between max number and min number of array is " + diffrenceMaxMin);
+*/
