@@ -411,11 +411,11 @@ Console.WriteLine("Sum of uneven index is " + sumOfUneven);
 /*
 [3 7 22 2 78] -> 76
 */
-// ------------------ НЕ РЕШЕНА --------------------------
-/*
+// Случайный массив по заданным параметрам пользователя.
+
 void NewArray(double[] array)
 {
-    for(double i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
     Console.Write("Input element number "+i+" = ");
     array[i] = Convert.ToDouble(Console.ReadLine());
@@ -424,30 +424,31 @@ void NewArray(double[] array)
 
 void ShowArray(double[] array)
 {
-    for(double i = 0; i < array.Length; i++)
+    for (int i = 0;  i < array.Length; i++)
+    {
         Console.Write(array[i] + "  ");
-
+    }
     Console.WriteLine();
 }
 
-double DiffrenceMaxMin(double[] array, double max, double min);
+double DiffrenceMaxMin(double[] array)
 {
-    double max = array[0];
-    double min = array[0];
-    double diffrence = 0;
+    double maxnum = array[0];
+    double minnum = array[0];
 
-    for(double i = 0; i < array.Length; i++)
-        if(array[i] > max) 
-            max = array[i];
-        if(array[i] < min) 
-            min = array[i];
-    diffrence = max - min;
-    return diffrence;
+    for (int i = 0; i < array.Length; i++)
+        if (array[i] >= maxnum) maxnum = array[i];
+    
+    for (int i = 0; i < array.Length; i ++)
+        if (array[i] <= minnum) minnum = array[i];
+      
+    double result = maxnum - minnum;
+    return result;
 }
 
 double[] array = new double[5];
 NewArray(array);
 ShowArray(array);
-double diffrenceMaxMin = DiffrenceMaxMin(myArray);
-Console.Write("Diffrence between max number and min number of array is " + diffrenceMaxMin);
-*/
+double diffrenceMaxMin = Math.Round((DiffrenceMaxMin(array)),2);
+Console.WriteLine("Diffrence between max number and min number is " + diffrenceMaxMin);
+
