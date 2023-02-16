@@ -412,7 +412,7 @@ Console.WriteLine("Sum of uneven index is " + sumOfUneven);
 [3 7 22 2 78] -> 76
 */
 // Случайный массив по заданным параметрам пользователя.
-
+/*
 void NewArray(double[] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -451,4 +451,58 @@ NewArray(array);
 ShowArray(array);
 double diffrenceMaxMin = Math.Round((DiffrenceMaxMin(array)),2);
 Console.WriteLine("Diffrence between max number and min number is " + diffrenceMaxMin);
+*/
 
+
+// ------------ ДОМАШНИЕ ЗАДАНИЕ К СЕМИНАРУ 6 --------------
+
+// Задача 41: Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
+/*
+0, 7, 8, -2, -2 -> 2
+1, -7, 567, 89, 223-> 3
+*/
+/*
+void NewArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+    Console.Write("Input element number "+i+" = ");
+    array[i] = Convert.ToInt32(Console.ReadLine());
+    }
+}
+
+void ShowArray(int[] array)
+{
+    for (int i = 0;  i < array.Length; i++)
+    {
+        Console.Write(array[i] + "  ");
+    }
+    Console.WriteLine();
+}
+
+int CountPosotivNumbers (int[] array)
+{
+    int count = 0;
+
+    for (int i = 0; i < array.Length; i++)
+    if (array[i] > 0) count+=1;
+    return count;
+}
+
+int[] array = new int[5];
+NewArray(array);
+ShowArray(array);
+int countPosotivNumbers = CountPosotivNumbers(array);
+Console.WriteLine("Count of positiv numbers is " + countPosotivNumbers);
+*/
+
+
+
+
+
+
+
+// Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
+/*
+b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
+*/
